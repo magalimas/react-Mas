@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Velas Tana</title>
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <a href="./index.html">
+                <img class="logo" src="./media/logo.png" alt="logo velas tana">
+            </a>
+            <h1>TIENDA ONLINE</h1>
+            <div>
+                <img class="logo-cart" src="./media/cart.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="bg">Un último paso</h2>
+
+        <form class="form">
+                <h3>Introduzca sus datos</h3>
+
+                <fieldset>
+                    <ol>
+                    <li>
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="Escribe tu nombre completo" required autofocus>
+                    </li>
+                    <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required>
+                    </li>
+                    <li>
+                    <label for="celphone">Teléfono</label>
+                    <input id="celphone" name="celphone" type="cel" placeholder="Ej. +541199999999" required>
+                    </li>
+                    </ol>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seleccione método de pago</legend>
+                    <label for='payment'>*</label>
+                    <select id='payment' name='payment'>
+                    <option value=''>Seleccione</option>
+                    <option>Ninguno</option>
+                    <option value='mercadopago'>Mercado pago</option>
+                    <option>Transferencia bancaria</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <button class="payProduct" type="submit">Confirmar pedido</button>
+                    <button class="payProduct">Regresar a la tienda</button>
+                </fieldset>
+        </form>
+    </main>
+</body>
+</html>

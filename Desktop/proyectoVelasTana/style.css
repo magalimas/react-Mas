@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    background-color: #e4e4e84a;
+    position: sticky;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px grey;
+    width: 100%;
+    z-index: 99;
+}
+
+main {
+    background-color: #e7e6df;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23ffffff' fill-opacity='0.56' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-section div {
+    position: relative;
+}
+
+.logo {
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.logo-cart {
+    width: 39px;
+    height: 38px;
+}
+
+.cart-products {
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 35px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 400px;
+}
+
+.velas {
+    padding-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts {
+    max-width: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.carts img {
+    width: 100%;
+}
+
+.carts p {
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+
+
+.carts div {
+    position: relative;
+}
+
+.carts a {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.425);
+    padding: 9px 23px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.carts a:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+    transition-duration: .3s;
+}
+
+.cart-products .item img {
+    width: 115px;
+}
+
+.cart-products .item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.144);
+}
+
+.cart-products .item .item-content {
+    margin: 0 19px;
+    width: 201px;
+}
+
+.cart-products .item .item-content h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item .item-content h6 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item span {
+    background-color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.cart-products h3 {
+    margin-bottom: 0;
+}
+
+.cart-products .item .item-content h5.cart-price {
+    font-weight: 700;
+}
+
+p.close-btn {
+    cursor: pointer;
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 330px;
+    border: 2px solid black;
+}
+
+.btn-buy {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.425);
+    padding: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*FORM*/
+
+.bg {
+    text-align: left;
+    font-size: 40px;
+    padding: 35px;
+}
+
+.form {
+    margin: 40px;
+    background: white;
+    color: black;
+    padding: 60px;
+    width: 350px;
+    border: solid 10px LightSteelBlue;
+    border-radius: 5px;
+}
+
+.form h3 {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form input {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border:solid 1px black;
+    border-radius: 3px;
+}
+
+.form ol li {
+    line-height: 35px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.form [required] {
+    border:solid 1px rgb(0, 0, 0);
+}
+
+.form legend {
+    padding-top: 20px;
+}
+
+.payProduct {
+    margin-top: 70px;
+    padding: 5px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.425);
+    color: #fff;
+    text-transform: uppercase;
+}

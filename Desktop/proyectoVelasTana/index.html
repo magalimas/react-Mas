@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" defer></script>
+    <title>Velas Tana</title>
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./media/logo.png" alt="logo velas tana">
+            <h1>TIENDA ONLINE</h1>
+            <div>
+                <img onmouseover="showCart(this)" class="logo-cart" src="./media/cart.jpg" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-velas">
+                </div>
+                <h2>Total: $ <strong class="price-total">0</strong></h2>
+                <a href="./contacto.html">
+                    <button class="btn-buy">Terminar Compra</button>
+                </a>
+            </div>
+        </div>
+    </header>
+     
+    <main>
+        <section class="container">
+            <div class="velas">
+            <div class="carts">
+                <div>
+                    <img src="./media/artemisa.png" alt="">
+                </div>
+                <h2 class="title">Vela Artemisa</h2>
+                <p>Aroma: Verbena</p>
+                <p>$<span>1200</span></p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/atenea.png" alt="">
+                </div>
+                <h2 class="title">Vela Atenea</h2>
+                <p>Aroma: Rosas</p>
+                <p>$<span>1100</span></p>
+                <a href="" class="btn-add-cart" data-id="2">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/bombe.png" alt="">
+                </div>
+                <h2 class="title">Vela Bombe</h2>
+                <p>Aroma: Coco</p>
+                <p>$<span>1000</span></p>
+                <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/magnolia.png" alt="">
+                </div>
+                <h2 class="title">Vela Magnolia</h2>
+                <p>Aroma: Verbena</p>
+                <p>$<span>2200</span></p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/milan.png" alt="">
+                </div>
+                <h2 class="title">Vela Milan</h2>
+                <p>Aroma: Frutos Rojos</p>
+                <p>$<span>1650</span></p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/olinda.png" alt="">
+                </div>
+                <h2 class="title">Vela Olinda</h2>
+                <p>Aroma: Vainilla</p>
+                <p>$<span>1850</span></p>
+                <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/pandora.png" alt="">
+                </div>
+                <h2 class="title">Vela Pandora</h2>
+                <p>Aroma: Papaya</p>
+                <p>$<span>440</span></p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/paraiso.png" alt="">
+                </div>
+                <h2 class="title">Vela Paraiso</h2>
+                <p>Aroma: Rosas</p>
+                <p>$<span>900</span></p>
+                <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/paris.png" alt="">
+                </div>
+                <h2 class="title">Vela Paris</h2>
+                <p>Aroma: Coco</p>
+                <p>$<span>720</span></p>
+                <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/harmonia.png" alt="">
+                </div>
+                <h2 class="title">Vela Harmonia</h2>
+                <p>Aroma: Papaya</p>
+                <p>$<span>1275</span></p>
+                <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/indiana.png" alt="">
+                </div>
+                <h2 class="title">Vela Indiana</h2>
+                <p>Aroma: Vainilla</p>
+                <p>$<span>780</span></p>
+                <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./media/channed.png" alt="">
+                </div>
+                <h2 class="title">Vela Channed</h2>
+                <p>Aroma: Gardenia</p>
+                <p>$<span>600</span></p>
+                <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+        </div>
+      </section>
+    </main>
+</body>
+</html>
